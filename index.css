@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+body{
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
 .main_body{
     background: url(img1.jpg) center center fixed rgba(39, 63, 92, 0.582);
     background-blend-mode: multiply;
