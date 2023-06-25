@@ -10,6 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>template design</title>
 </head>
 
@@ -252,7 +253,8 @@
       <h1>We Have Expert Team</h1>
     </div>
     <div class="main-potfolio">
-      <div class="row">
+      <!-- aos used herer too -->
+      <div class="row" data-aos="fade-down">
         <div class="col col-lg-4 col-12 ">
           <div class="folio-img">
             <div class="card">
@@ -379,8 +381,8 @@
           <button class="btn btn-outline-primary" type="submit">Watch Video</button>
         </div>
       </div>
-  
-      <div class="row m-auto" style="width: 80%;">
+        <!-- aos is used here  -->
+      <div class="row m-auto" style="width: 80%;" data-aos="fade-right">
         <div class="col review-1st col-lg-6">
           <div class=" sub-review">
             <div class="main-review">
@@ -440,7 +442,7 @@
       <h1>Weekly Latest Updates</h1>
     </div>
     <div class="update-main">
-      <div class="row row-update-main">
+      <div class="row row-update-main" data-aos="fade-down">
         <div class="col col-update-main p-0 col-lg-4">
           <div class="update-sub-main">
             <img src="img4.jpg" alt="">
@@ -545,7 +547,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row" >
       <div class="col col-lg-4 col-12 px-3">
         <h2>About us</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cum dicta, vel officia natus similique.
@@ -627,6 +629,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000,
+      });
+    </script>
 </body>
 
 </html>
